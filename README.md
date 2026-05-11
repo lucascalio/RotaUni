@@ -95,4 +95,4 @@ git clone https://github.com/seu-usuario/rotauni.git
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido para atividade acadêmica de Desenvolvimento Mobile.
+Lucas Vigo Calió - RA:24000092
