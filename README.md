@@ -1,98 +1,17 @@
-# 🚍 RotaUni
+# app_rotauni
 
-Aplicativo mobile desenvolvido em Flutter para gerenciamento de transporte universitário.
+A new Flutter project.
 
-## 📱 Sobre o Projeto
+## Getting Started
 
-O **RotaUni** tem como objetivo facilitar a comunicação entre estudantes e motoristas de transporte universitário, permitindo:
+This project is a starting point for a Flutter application.
 
-* Cadastro de alunos com preenchimento automático de endereço via CEP
-* Confirmação de presença diária
-* Visualização da rota do ônibus
-* Previsão de chegada
-* Listagem de alunos que utilizarão o transporte
+A few resources to get you started if this is your first Flutter project:
 
----
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-## 🧠 Arquitetura
-
-O projeto segue o padrão **MVC (Model-View-Controller)**:
-
-* **Model:** Representação dos dados (User)
-* **View:** Interface do usuário
-* **Controller:** Regras de negócio
-* **Service:** Integrações externas (SQLite e API CEP)
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-* Flutter / Dart
-* SQLite (sqflite)
-* API ViaCEP
-* Google Maps Flutter
-
----
-
-## 🗂️ Estrutura do Projeto
-
-```
-lib/
- ├── models/
- ├── views/
- ├── controllers/
- ├── services/
- ├── config/
- └── widgets/
-```
-
----
-
-## ⚙️ Funcionalidades
-
-✔ Login de usuário
-✔ Cadastro com busca automática de endereço
-✔ Confirmação de presença (vai/não vai)
-✔ Armazenamento local com SQLite
-✔ Exibição de rota e alunos confirmados
-
----
-
-## 🚀 Como Executar
-
-```bash
-flutter pub get
-flutter run
-```
-
----
-
-## 📦 Como Clonar
-
-```bash
-git clone https://github.com/seu-usuario/rotauni.git
-```
-
----
-
-## 📸 Telas do App
-
-* Login
-* Cadastro
-* Confirmação
-* Home com mapa
-
----
-
-## 💡 Melhorias Futuras
-
-* Integração com Firebase
-* Rastreamento em tempo real do ônibus
-* Notificações push
-* Login com autenticação real
-
----
-
-## 👨‍💻 Autor
-
-Lucas Vigo Calió - RA:24000092
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
