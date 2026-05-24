@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  // PASSAGEIROS
+  // PASSAGEIROS (mock)
   final List<Map<String, String>> passageiros = [
     {"nome": "Ana Silva", "status": "Aguardando"},
     {"nome": "João Souza", "status": "Já embarcou"},
@@ -62,7 +62,6 @@ class _HomePageState extends State<HomePage> {
     showDialog(
       context: context,
       barrierDismissible: false,
-
       builder: (context) {
 
         return AlertDialog(
@@ -176,7 +175,7 @@ class _HomePageState extends State<HomePage> {
 
                 children: [
 
-                  // STATUS (COM COR RESTAURADA)
+                  // STATUS
                   Card(
                     elevation: 3,
                     child: ListTile(
@@ -197,6 +196,7 @@ class _HomePageState extends State<HomePage> {
 
                   const SizedBox(height: 10),
 
+                  // ETA
                   const Card(
                     elevation: 3,
                     child: ListTile(
@@ -210,6 +210,7 @@ class _HomePageState extends State<HomePage> {
 
                   const SizedBox(height: 10),
 
+                  // PRÓXIMA PARADA
                   const Card(
                     elevation: 5,
                     child: ListTile(
@@ -231,6 +232,42 @@ class _HomePageState extends State<HomePage> {
 
                   const SizedBox(height: 15),
 
+                  // AVISOS
+                  const Text(
+                    "Avisos importantes",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+
+                  const SizedBox(height: 10),
+
+                  Card(
+                    color: Colors.yellow.shade100,
+                    child: const ListTile(
+                      leading: Icon(Icons.warning),
+                      title: Text("Saída antecipada"),
+                      subtitle: Text(
+                        "Hoje o ônibus sairá 10 min mais cedo",
+                      ),
+                    ),
+                  ),
+
+                  Card(
+                    color: Colors.blue.shade50,
+                    child: const ListTile(
+                      leading: Icon(Icons.cloud),
+                      title: Text("Clima"),
+                      subtitle: Text(
+                        "Chuva prevista hoje ☔",
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 15),
+
+                  // PASSAGEIROS
                   const Text(
                     "Passageiros do dia",
                     style: TextStyle(
