@@ -1,51 +1,25 @@
-class User {
-  int? id;
+class UserModel {
   String nome;
-  String telefone;
-  String cep;
+  String celular;
   String endereco;
-  String username;
-  String senha;
-  String tipo; // aluno ou motorista
-  int vai;
+  String email;
+  String tipoUsuario;
 
-  User({
-    this.id,
+  UserModel({
     required this.nome,
-    required this.telefone,
-    required this.cep,
+    required this.celular,
     required this.endereco,
-    required this.username,
-    required this.senha,
-    required this.tipo,
-    this.vai = 0,
+    required this.email,
+    required this.tipoUsuario,
   });
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
       'nome': nome,
-      'telefone': telefone,
-      'cep': cep,
+      'celular': celular,
       'endereco': endereco,
-      'username': username,
-      'senha': senha,
-      'tipo': tipo,
-      'vai': vai,
+      'email': email,
+      'tipoUsuario': tipoUsuario,
     };
-  }
-
-  factory User.fromMap(Map<String, dynamic> map) {
-    return User(
-      id: map['id'],
-      nome: map['nome'],
-      telefone: map['telefone'],
-      cep: map['cep'],
-      endereco: map['endereco'],
-      username: map['username'],
-      senha: map['senha'],
-      tipo: map['tipo'],
-      vai: map['vai'],
-    );
   }
 }

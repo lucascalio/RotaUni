@@ -1,45 +1,33 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'views/login_view.dart';
 
-void main() {
-  runApp(RotaUniApp());
+import 'firebase_options.dart';
+import 'views/splash/splash_page.dart';
+import 'utils/themes.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  runApp(const RotaUniApp());
 }
 
 class RotaUniApp extends StatelessWidget {
+  const RotaUniApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'RotaUni',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Color(0xFF1565C0),
-        scaffoldBackgroundColor: Color(0xFFF5F7FA),
+      title: 'RotaUni',
 
-        appBarTheme: AppBarTheme(
-          backgroundColor: Color(0xFF1565C0),
-          elevation: 0,
-          centerTitle: true,
-        ),
+      // Apenas UM tema (sem dark mode)
+      theme: AppThemes.lightTheme,
 
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xFF1565C0),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-          ),
-        ),
-
-        inputDecorationTheme: InputDecorationTheme(
-          filled: true,
-          fillColor: Colors.white,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide.none,
-          ),
-        ),
-      ),
-      home: LoginView(),
+      home: const SplashPage(),
     );
   }
 }

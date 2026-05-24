@@ -1,11 +1,13 @@
-class AppConstants {
-  static const String appName = "RotaUni";
+import 'package:flutter/material.dart';
 
-  // Cores principais
-  static const primaryColor = 0xFF1976D2;
-  static const secondaryColor = 0xFF42A5F5;
+class AppColors {
 
-  // Textos
-  static const loginTitle = "Login";
-  static const registerTitle = "Cadastro";
+  static const Color primary =
+  Color(0xFF0D1B2A);
+
+  static const Color secondary =
+  Color(0xFF1B263B);
+
+  static const Color accent =
+  Color(0xFF415A77);
 }

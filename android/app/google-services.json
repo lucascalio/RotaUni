@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159430048573",
+    "project_id": "rotauni-117ad",
+    "storage_bucket": "rotauni-117ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159430048573:android:a3d5b523fe1bb2d7482354",
+        "android_client_info": {
+          "package_name": "com.example.app_rotauni"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYxjYaMDe2Ot4kv3rLWxaDQJ1ChPQEmfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
